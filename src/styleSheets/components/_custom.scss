@@ -1,0 +1,38 @@
+:root{
+  --blue-ligth: hsl(229, 64%, 46%); 
+  --grey-dark: hsl(229, 25%, 31%); 
+
+  --font-weight-semi-bold: 600; 
+  --font-weight-bold: 700; 
+
+  --startBlueGradient: hsl(230, 89%, 62%);
+  --endBlueGradient: hsl(230, 89%, 65%);
+
+  --startRedGradient: hsl(349, 71%, 52%);
+  --endRedGradient: hsl(349, 70%, 56%);
+
+  --startYelllowGradient: hsl(39, 89%, 49%);
+  --endYellowGradient: hsl(40, 84%, 53%);
+}
+
+body{
+  margin: 0px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.main{
+  background-image: radial-gradient(circle at top, #1F3757 20%, #131537 100%);
+  color: white;
+  min-height: 100vh;
+  //padding: 25px;
+}
+
+.container-tap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-tap-center{
+  display: flex;
+  justify-content: center;
+}
