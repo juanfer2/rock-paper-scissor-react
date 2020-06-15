@@ -45,40 +45,46 @@ function TapButton({type}) {
   switch (type) {
     case 'rock':
       return (
-        <TapButtonStyled
-        startColor={'--startRedGradient'}
-        endColor={'--endRedGradient'}
-        shadowColor={'#980E31'}
-        >
-          <div className="container-icon" >
-            <RockIcon 
-            className="icon"/>
-          </div>
-        </TapButtonStyled>
+        <div className="container-rock" >
+          <TapButtonStyled
+          startColor={'--startRedGradient'}
+          endColor={'--endRedGradient'}
+          shadowColor={'#980E31'}
+          >
+            <div className="container-icon" >
+              <RockIcon 
+              className="icon"/>
+            </div>
+          </TapButtonStyled>
+        </div>
       )
     case 'paper':
       return (
-        <TapButtonStyled
-        startColor={'--startBlueGradient'}
-        endColor={'--endBlueGradient'}
-        shadowColor={'rgb(37, 67, 195)'}
-        >
-          <div className="container-icon" >
-            <PaperIcon className="icon"/>
-          </div>
-        </TapButtonStyled>
+        <div className="container-paper" >
+          <TapButtonStyled
+          startColor={'--startBlueGradient'}
+          endColor={'--endBlueGradient'}
+          shadowColor={'rgb(37, 67, 195)'}
+          >
+            <div className="container-icon" >
+              <PaperIcon className="icon"/>
+            </div>
+          </TapButtonStyled>
+        </div>
       )
     case 'scissor':
       return (
-        <TapButtonStyled
-        startColor={'--startYelllowGradient'}
-        endColor={'--endYellowGradient'}
-        shadowColor={'#C76C14'}
-        >
-          <div className="container-icon" >
-            <ScissorIcon className="icon"/>
-          </div>
-        </TapButtonStyled>
+        <div className="container-scissor" >
+          <TapButtonStyled
+          startColor={'--startYelllowGradient'}
+          endColor={'--endYellowGradient'}
+          shadowColor={'#C76C14'}
+          >
+            <div className="container-icon" >
+              <ScissorIcon className="icon"/>
+            </div>
+          </TapButtonStyled>
+        </div>
       )
     default:
       return null;
